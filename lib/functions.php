@@ -38,6 +38,14 @@ function fontawesome_translate_icon($icon_name) {
 		"shopping-cart" => "shop-cart",
 		"comment" => "speech-bubble",
 		"comments" => "speech-bubble-alt",
+		"star fa-hover" => "star-alt",
+		"star-o" => "star-empty",
+		"thumbs-down fa-hover" => "thumbs-down-alt",
+		"thumbs-up fa-hover" => "thumbs-up-alt",
+		"trash-o" => "trash",
+		"twitter-square" => "twitter",
+		"reply" => "undo",
+		"film" => "video",
 	);
 	
 	$search = array_search($icon_name, $translated_icons);
