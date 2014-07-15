@@ -16,6 +16,12 @@
 		<version>1.9</version>
 	</requires>
 	
+	<requires>
+		<type>priority</type>
+		<plugin>aalborg_theme</plugin>
+		<priority>after</priority>
+	</requires>
+	
 	<category>ColdTrick</category>
 	<category>theme</category>
 </plugin_manifest>
