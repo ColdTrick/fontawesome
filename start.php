@@ -16,7 +16,7 @@ elgg_register_event_handler("init", "system", "fontawesome_init");
 function fontawesome_init() {
 	
 	// add CSS / JS
-	elgg_extend_view("css/elgg", "css/fontawesome/colors", 400);
+	elgg_extend_view("css/admin", "css/fontawesome/admin");
 	
 	// register css
 	elgg_register_css("fontawesone", "mod/fontawesome/vendors/font-awesome-4.1.0/css/font-awesome.min.css");
