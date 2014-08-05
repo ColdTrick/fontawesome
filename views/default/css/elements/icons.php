@@ -14,7 +14,7 @@
 *************************************** */
 .fa {
 	color: #CCC;
-	font-size: 15px;
+	font-size: 16px;
 }
 
 :focus > .fa,
@@ -23,9 +23,18 @@
 	color: #4690D6;
 }
 
+h1 > .fa,
+h2 > .fa,
+h3 > .fa,
+h4 > .fa,
+h5 > .fa,
+h6 > .fa {
+	font-size: 1em;
+}
+
 .elgg-icon {
-	width: 16px;
-	height: 16px;
+	min-width: 16px;
+	min-height: 16px;
 	margin: 0 2px;
 }
 
