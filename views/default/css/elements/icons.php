@@ -41,8 +41,8 @@ h6 > .fa {
 .elgg-avatar > .elgg-icon-hover-menu {
 	display: none;
 	position: absolute;
-	right: 0;
-	bottom: 0;
+	right: -6px;
+	bottom: -2px;
 	margin: 0;
 	cursor: pointer;
 }
