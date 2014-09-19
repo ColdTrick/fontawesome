@@ -11,6 +11,7 @@ function fontawesome_translate_icon($icon_name) {
 		"checkmark" => "check",
 		"clip" => "paperclip",
 		"cursor-drag-arrow" => "arrows",
+		"drag-arrow" => "arrows", // admin sprite
 		"delete-alt" => "times-circle",
 		"delete" => "times",
 		"facebook" => "facebook-square",
