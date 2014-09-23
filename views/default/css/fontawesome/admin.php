@@ -1,10 +1,6 @@
 <?php
 
 ?>
-.elgg-page-admin .elgg-icon {
-	background: none;
-}
-
 .fa {
 	color: #aaa;
 	font-size: 16px;
@@ -26,6 +22,7 @@ h6 > .fa {
 }
 
 .elgg-icon {
+	background: none;
 	min-width: 16px;
 	min-height: 16px;
 	width: auto;
