@@ -19,6 +19,6 @@ function fontawesome_init() {
 	elgg_extend_view("css/admin", "css/fontawesome/admin");
 	
 	// register css
-	elgg_register_css("fontawesone", "mod/fontawesome/vendors/font-awesome-4.1.0/css/font-awesome.min.css");
+	elgg_register_css("fontawesone", "mod/fontawesome/vendors/font-awesome-4.2.0/css/font-awesome.min.css");
 	elgg_load_css("fontawesone");
 }

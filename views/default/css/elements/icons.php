@@ -7,14 +7,14 @@
  */
 
 ?>
-/* <style> /**/
+/* <style> */
 
 /* ***************************************
 	ICONS
 *************************************** */
 .fa {
 	color: #CCC;
-	font-size: 16px;
+	font-size: 16px !important;
 }
 
 :focus > .fa,

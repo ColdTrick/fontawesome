@@ -1,9 +1,10 @@
 <?php
 
 ?>
+/* <style> */
 .fa {
 	color: #aaa;
-	font-size: 16px;
+	font-size: 16px !important;
 }
 
 :focus > .fa,
