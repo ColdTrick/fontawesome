@@ -1,6 +1,10 @@
 Version history
 ===============
 
+x.x:
+
+- updated: fontawsome 4.2.0
+
 1.0:
 
 - initial release
