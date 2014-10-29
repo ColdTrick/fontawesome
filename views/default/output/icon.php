@@ -11,12 +11,13 @@
 $class = (array) elgg_extract("class", $vars);
 global $FONTAWESOME_ICON_NAME;
 $FONTAWESOME_ICON_NAME = false;
-array_walk($class, function($value, $index) {
-	if (strpos($value, "elgg-icon-") !== false) {
+
+foreach ($class as $classname) {
+	if (strpos($classname, "elgg-icon-") !== false) {
 		global $FONTAWESOME_ICON_NAME;
-		$FONTAWESOME_ICON_NAME = str_ireplace("elgg-icon-", "", $value);
+		$FONTAWESOME_ICON_NAME = str_ireplace("elgg-icon-", "", $classname);
 	}
-});
+}
 
 $class[] = "elgg-icon";
 $class[] = "fa";
