@@ -3,7 +3,15 @@
  * All helper functions are bundled here
  */
 
+/**
+ * Translate some default Elgg icon names to the FontAwesome version
+ *
+ * @param string $icon_name the Elgg icon name
+ *
+ * @return string
+ */
 function fontawesome_translate_icon($icon_name) {
+	
 	static $translated_icons = array(
 		"arrow-two-head" => "arrows-h",
 		"attention" => "exclamation-triangle",
