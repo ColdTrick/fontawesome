@@ -1,6 +1,11 @@
 Version history
 ===============
 
+x.x:
+
+- added: composer support
+- updated: fontawesome v4.3.0
+
 1.0.1 (2014-11-17):
 
 - fix(views): replace array walk with a foreach loop #2
