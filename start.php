@@ -16,6 +16,7 @@ elgg_register_event_handler("init", "system", "fontawesome_init");
 function fontawesome_init() {
 	
 	// add CSS / JS
+	elgg_extend_view("css/elements/forms", "css/fontawesome/forms");
 	elgg_extend_view("css/admin", "css/fontawesome/admin");
 	
 	// register css
