@@ -63,3 +63,71 @@ function fontawesome_translate_icon($icon_name) {
 	
 	return $icon_name;
 }
+
+/**
+ * Return the url to the FontAwesome CSS
+ *
+ * @param bool $realpath return the file location
+ *
+ * @return false|string
+ */
+function fontawesome_get_css_location($realpath = false) {
+	$realpath = (bool) $realpath;
+
+	$externals = elgg_get_config('externals_map');
+	if (empty($externals) || !is_array($externals)) {
+		return false;
+	}
+	$css = elgg_extract('css', $externals);
+	if (empty($css) || !is_array($css)) {
+		return false;
+	}
+	$fa = elgg_extract('fontawesome', $css);
+	if (empty($fa)) {
+		return false;
+	}
+
+	$result = elgg_normalize_url($fa->url);
+
+	if ($realpath) {
+		$result = str_ireplace(elgg_get_site_url(), elgg_get_root_path(), $result);
+	}
+
+	return $result;
+}
+
+/**
+ * Get all the icon from the CSS file
+ *
+ * @return false|array
+ */
+function fontawesome_get_icon_array() {
+
+	$path = fontawesome_get_css_location(true);
+	if (empty($path)) {
+		return false;
+	}
+
+	$contents = file_get_contents($path);
+	if (empty($contents)) {
+		return false;
+	}
+
+	$icons = array();
+	$hex_codes = array();
+
+	/**
+	 * Get all CSS selectors that have a "content:" pseudo-element rule,
+	 * as well as all associated hex codes.
+	*/
+	preg_match_all( '/\.(icon-|fa-)([^,}]*)\s*:before\s*{\s*(content:)\s*"(\\\\[^"]+)"/s', $contents, $matches);
+	$icons = $matches[2];
+	$hex_codes = $matches[4];
+
+	$icons = array_combine( $hex_codes, $icons );
+
+	// sort array
+	natcasesort($icons);
+
+	return $icons;
+}
