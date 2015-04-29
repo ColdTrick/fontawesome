@@ -20,6 +20,6 @@ function fontawesome_init() {
 	elgg_extend_view("css/admin", "css/fontawesome/admin");
 	
 	// register css
-	elgg_register_css("fontawesone", "mod/fontawesome/vendor/fortawesome/font-awesome/css/font-awesome.min.css");
-	elgg_load_css("fontawesone");
+	elgg_register_css("fontawesome", "mod/fontawesome/vendor/fortawesome/font-awesome/css/font-awesome.min.css");
+	elgg_load_css("fontawesome");
 }
