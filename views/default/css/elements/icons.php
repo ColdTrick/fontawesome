@@ -14,7 +14,9 @@
 *************************************** */
 .fa {
 	color: #CCC;
-	font-size: 16px !important;
+}
+.fa.elgg-icon {
+	font-size: 16px;
 }
 
 :focus > .fa,
