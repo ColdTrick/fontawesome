@@ -12,5 +12,8 @@
 	"require": {
 		"composer/installers": "^1.0.8",
 		"FortAwesome/Font-Awesome": "^4.3"
+	},
+	"require-dev": {
+		"coldtrick/sniffs": "dev-master"
 	}
 }
