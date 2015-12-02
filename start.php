@@ -20,6 +20,16 @@ function fontawesome_init() {
 	elgg_extend_view("css/admin", "css/fontawesome/admin");
 	
 	// register css
-	elgg_register_css("fontawesome", "mod/fontawesome/vendor/fortawesome/font-awesome/css/font-awesome.min.css");
+	$root_path = elgg_get_root_path();
+	$plugins_path = elgg_get_plugins_path();
+	
+	if (file_exists("{$root_path}/vendor/fortawesome/font-awesome/css/font-awesome.min.css")) {
+		// this plugin was installed as a composer dependency
+		elgg_register_css("fontawesome", "vendor/fortawesome/font-awesome/css/font-awesome.min.css");
+	} elseif (file_exists("{$plugins_path}/fontawesome/vendor/fortawesome/font-awesome/css/font-awesome.min.css")) {
+		// this plugin was installed stand-alone
+		elgg_register_css("fontawesome", "mod/fontawesome/vendor/fortawesome/font-awesome/css/font-awesome.min.css");
+	}
+	
 	elgg_load_css("fontawesome");
 }
