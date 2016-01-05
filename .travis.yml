@@ -29,13 +29,10 @@ notifications:
 
 # before deployment make the zipfile to upload
 before_deploy:
- - composer install --no-dev
- # go down one directory
- - cd ..
- # exclude all .git directories
- - zip -r $PROJECTNAME/${PROJECTNAME}_$TRAVIS_TAG.zip $PROJECTNAME -x $PROJECTNAME/.git/**\* $PROJECTNAME/.git/ $PROJECTNAME/**/.git/**\* $PROJECTNAME/**/.git/
- # return to the main directory for the next step
- - cd $PROJECTNAME
+ # load releases scripts
+ - composer require coldtrick/releases:dev-master
+ # execute release prepare script
+ - sh ./vendor/coldtrick/releases/scripts/travis/before_deploy.sh
 
 # deployment settings
 deploy:
