@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "194bdfcefa02c4e35eebea5eee59897f",
-    "content-hash": "127d88924a677f7aa14d0cb0b373c703",
+    "hash": "1d3635a96a24e7d5d7a0f7ee8d984556",
+    "content-hash": "f2ca5fb74ec5b1e20ee18adb226be6a2",
     "packages": [
         {
             "name": "composer/installers",
@@ -153,6 +153,33 @@
     ],
     "packages-dev": [
         {
+            "name": "coldtrick/releases",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ColdTrick/releases.git",
+                "reference": "75accd41f77a0e7a467fe9f41f4ed3ec989e99cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ColdTrick/releases/zipball/75accd41f77a0e7a467fe9f41f4ed3ec989e99cc",
+                "reference": "75accd41f77a0e7a467fe9f41f4ed3ec989e99cc",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "description": "A set of scripts needed for building releases",
+            "keywords": [
+                "ci",
+                "release",
+                "travis"
+            ],
+            "time": "2016-01-05 15:31:45"
+        },
+        {
             "name": "coldtrick/sniffs",
             "version": "dev-master",
             "source": {
@@ -257,7 +284,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "coldtrick/sniffs": 20
+        "coldtrick/sniffs": 20,
+        "coldtrick/releases": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

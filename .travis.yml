@@ -29,8 +29,6 @@ notifications:
 
 # before deployment make the zipfile to upload
 before_deploy:
- # load releases scripts
- - composer require coldtrick/releases:dev-master
  # execute release prepare script
  - sh ./vendor/coldtrick/releases/scripts/travis/before_deploy.sh
 
@@ -46,3 +44,7 @@ deploy:
     # only when a tag is created in GitHub
     tags: true
     all_branches: true
+
+after_deploy:
+ # execute release after script
+ - sh ./vendor/coldtrick/releases/scripts/travis/after_deploy.sh
