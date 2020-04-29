@@ -3,7 +3,7 @@
 	"description": "Replaces the default Elgg icons with the Font Awesome icons",
 	"type": "elgg-plugin",
 	"keywords": ["elgg", "plugin", "icon", "theme"],
-	"license": "GPL-2.0",
+	"license": "GPL-2.0-only",
 	"homepage": "https://community.elgg.org/plugins/1894193",
 	"support": {
 		"source": "https://github.com/ColdTrick/fontawesome",
