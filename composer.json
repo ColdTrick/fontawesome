@@ -1,20 +1,21 @@
 {
 	"name": "coldtrick/fontawesome",
-	"description": "Replaces the default Elgg icons with the Font Awesome icons",
+	"description": "Gives Elgg site admins the ability to configure / upload specific versions of Font Awesome icon packs.",
 	"type": "elgg-plugin",
 	"keywords": ["elgg", "plugin", "icon", "theme"],
 	"license": "GPL-2.0-only",
-	"homepage": "https://community.elgg.org/plugins/1894193",
 	"support": {
 		"source": "https://github.com/ColdTrick/fontawesome",
 		"issues": "https://github.com/ColdTrick/fontawesome/issues"
 	},
 	"require": {
-		"composer/installers": "^1.0.8",
-		"FortAwesome/Font-Awesome": "^4.3"
+		"composer/installers": "^1.0.8"
 	},
 	"require-dev": {
 		"coldtrick/sniffs": "dev-master",
 		"coldtrick/releases": "dev-master"
+	},
+	"conflict": {
+		"elgg/elgg": "<3.3"
 	}
 }

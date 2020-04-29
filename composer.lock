@@ -1,11 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "1d3635a96a24e7d5d7a0f7ee8d984556",
-    "content-hash": "f2ca5fb74ec5b1e20ee18adb226be6a2",
+    "content-hash": "bb107cfca9bb0ad5b68f2810ba41bb59",
     "packages": [
         {
             "name": "composer/installers",
@@ -100,55 +99,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
-        },
-        {
-            "name": "fortawesome/font-awesome",
-            "version": "v4.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/e554555d73a44e0a7d11b0361ad7a5325a5f551c",
-                "reference": "e554555d73a44e0a7d11b0361ad7a5325a5f551c",
-                "shasum": ""
-            },
-            "require-dev": {
-                "jekyll": "1.0.2",
-                "lessc": "1.4.2"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.0.x-dev"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "OFL-1.1",
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Gandy",
-                    "email": "dave@fontawesome.io",
-                    "homepage": "http://twitter.com/davegandy",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The iconic font and CSS framework",
-            "homepage": "http://fontawesome.io/",
-            "keywords": [
-                "FontAwesome",
-                "awesome",
-                "bootstrap",
-                "font",
-                "icon"
-            ],
-            "time": "2015-07-28 21:55:03"
+            "time": "2015-02-18T17:17:01+00:00"
         }
     ],
     "packages-dev": [
@@ -158,12 +109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ColdTrick/releases.git",
-                "reference": "75accd41f77a0e7a467fe9f41f4ed3ec989e99cc"
+                "reference": "8fcc4cbc2c0a5156fce4283304deac6facec95f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ColdTrick/releases/zipball/75accd41f77a0e7a467fe9f41f4ed3ec989e99cc",
-                "reference": "75accd41f77a0e7a467fe9f41f4ed3ec989e99cc",
+                "url": "https://api.github.com/repos/ColdTrick/releases/zipball/8fcc4cbc2c0a5156fce4283304deac6facec95f6",
+                "reference": "8fcc4cbc2c0a5156fce4283304deac6facec95f6",
                 "shasum": ""
             },
             "type": "library",
@@ -177,7 +128,7 @@
                 "release",
                 "travis"
             ],
-            "time": "2016-01-05 15:31:45"
+            "time": "2020-02-04T10:35:14+00:00"
         },
         {
             "name": "coldtrick/sniffs",
@@ -204,7 +155,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "description": "Elgg coding standards",
-            "time": "2015-02-17 14:47:25"
+            "time": "2015-02-17T14:47:25+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -278,7 +229,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2015-09-09 00:18:50"
+            "time": "2015-09-09T00:18:50+00:00"
         }
     ],
     "aliases": [],
@@ -290,5 +241,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
