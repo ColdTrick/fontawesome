@@ -9,6 +9,7 @@
 		"issues": "https://github.com/ColdTrick/fontawesome/issues"
 	},
 	"require": {
+		"ext-zip": "*",
 		"composer/installers": "^1.0.8"
 	},
 	"require-dev": {
