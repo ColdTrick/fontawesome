@@ -1,11 +1,6 @@
 <?php
 
-use ColdTrick\FontAwesome\Bootstrap;
-
 return [
-	'bootstrap' => Bootstrap::class,
-	'actions' => [
-	],
 	'hooks' => [
 		'head' => [
 			'page' => [
