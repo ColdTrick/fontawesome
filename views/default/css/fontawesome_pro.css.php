@@ -2,8 +2,9 @@
 
 $href = elgg_get_plugin_setting('href', 'fontawesome');
 $integrity = elgg_get_plugin_setting('integrity', 'fontawesome');
+$zip = elgg_get_plugin_setting('zip', 'fontawesome');
 
-if (empty($href) || empty($integrity)) {
+if (empty($href) && empty($integrity) && empty($zip)) {
 	return;
 }
 
