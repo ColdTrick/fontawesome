@@ -35,3 +35,9 @@ if ($plugin->zip) {
 		'switch' => true,
 	]);
 }
+
+echo elgg_view_field([
+	'#type' => 'hidden',
+	'name' => 'flush_cache',
+	'value' => 1,
+]);

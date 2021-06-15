@@ -1,6 +1,9 @@
 <?php
 
 return [
+	'plugin' => [
+		'version' => '2.0',
+	],
 	'hooks' => [
 		'head' => [
 			'page' => [
