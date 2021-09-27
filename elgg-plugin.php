@@ -1,9 +1,12 @@
 <?php
 
+use ColdTrick\FontAwesome\Bootstrap;
+
 return [
 	'plugin' => [
 		'version' => '2.0',
 	],
+	'bootstrap' => Bootstrap::class,
 	'hooks' => [
 		'head' => [
 			'page' => [
@@ -20,11 +23,6 @@ return [
 	'view_extensions' => [
 		'elements/components/menus.css' => [
 			'css/fontawesome_pro.css' => [],
-		],
-	],
-	'views' => [
-		'default' => [
-			'fontawesome/webfont/' => elgg_get_data_path() . 'fontawesome/webfont/',
 		],
 	],
 ];
