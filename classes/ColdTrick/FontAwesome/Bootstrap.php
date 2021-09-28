@@ -10,6 +10,10 @@ class Bootstrap extends DefaultPluginBootstrap {
 	 * {@inheritDoc}
 	 */
 	public function load() {
+		if (elgg_get_config('system_cache_loaded')) {
+			return;
+		}
+		
 		// since we use a lib function we can't register this in elgg-plugin.php
 		$views_spec = [
 			'default' => [
