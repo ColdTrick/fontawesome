@@ -4,7 +4,7 @@ use ColdTrick\FontAwesome\Bootstrap;
 
 return [
 	'plugin' => [
-		'version' => '3.0',
+		'version' => '3.0.1',
 	],
 	'bootstrap' => Bootstrap::class,
 	'hooks' => [

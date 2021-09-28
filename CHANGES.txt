@@ -1,6 +1,10 @@
 Version history
 ===============
 
+3.0.1 (2021-09-28):
+
+- fixed: merge viewspecs only if not already loaded from cache
+
 3.0 (2021-09-27):
 
 - added: dutch translation
