@@ -46,7 +46,7 @@ class Settings {
 		$plugin->zip = $zip->getClientOriginalName();
 		$archive = new \ZipArchive();
 		if ($archive->open($zip->getPathname()) !== true) {
-			register_error(elgg_echo('fontawesome:settings:save:zip_error'));
+			elgg_register_error_message(elgg_echo('fontawesome:settings:save:zip_error'));
 			return;
 		}
 		
