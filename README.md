@@ -1,7 +1,7 @@
 Font Awesome
 ==============
 
-![Elgg 4.0](https://img.shields.io/badge/Elgg-4.0-green.svg)
+![Elgg 4.2](https://img.shields.io/badge/Elgg-4.2-green.svg)
 [![Build Status](https://scrutinizer-ci.com/g/ColdTrick/fontawesome/badges/build.png?b=master)](https://scrutinizer-ci.com/g/ColdTrick/fontawesome/build-status/master)
 [![Latest Stable Version](https://poser.pugx.org/coldtrick/fontawesome/v/stable.svg)](https://packagist.org/packages/coldtrick/fontawesome)
 [![License](https://poser.pugx.org/coldtrick/fontawesome/license.svg)](https://packagist.org/packages/coldtrick/fontawesome)
