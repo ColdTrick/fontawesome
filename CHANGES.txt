@@ -1,6 +1,10 @@
 Version history
 ===============
 
+4.0 (2022-06-01):
+
+- changed: increased minimal Elgg version to 4.2
+
 3.0.1 (2021-09-28):
 
 - fixed: merge viewspecs only if not already loaded from cache
